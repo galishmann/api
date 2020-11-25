@@ -38,6 +38,6 @@ app.post('/api/items', (req, res) => {
   return res.status(400);
 })
 
-app.listen(3000, () => {
-  console.log('Server started');
+app.listen(8080, () => {
+  console.log('Server started on 8080');
 });
