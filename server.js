@@ -2,6 +2,8 @@ const express = require('express');
 const morgan = require('morgan');
 
 
+const port = 8080;
+
 const data = [
   {
     id: '1',
@@ -38,6 +40,6 @@ app.post('/api/items', (req, res) => {
   return res.status(400);
 })
 
-app.listen(8080, () => {
-  console.log('Server started on 8080');
+app.listen(port, () => {
+  console.log(`Server started on ${port}`);
 });
